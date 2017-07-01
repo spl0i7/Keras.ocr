@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>OCR.keras</title>
+  <link rel="stylesheet" href="/static/style.css">
+
+</head>
+<body>
+    <div class="container">
+        <h2>Draw a digit</h2>
+        <div id="canvascontainer">
+            <canvas id="ocrCanvas"></canvas>
+        </div>
+        <div class="buttons">
+            <button id="clear" onclick="clearCanvas()">Clear</button>
+            <button id="predict" onclick="predict()" >Predict</button>
+        </div>
+        <p>Prediction : <strong class="prediction"></strong></p>
+        <script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="/static/app.js"></script>
+    </div>
+</body>
+</html>
